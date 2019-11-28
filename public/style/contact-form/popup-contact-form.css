@@ -1,0 +1,95 @@
+.contact-form-cover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+}
+.contact-form-cover form{
+    position: relative;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    background-color: #EBEBEB;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -600px;
+    padding: 20px;
+}
+.client-data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.client-data input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #444;
+    width: 48%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.client-data textarea{
+    width: 100%;
+    min-height: 100px;
+    border: none;
+    border-bottom: 1px solid #444;
+    background-color: transparent;
+    padding: 5px 10px;
+}
+.client-data input:focus, .client-data textarea:focus{
+    outline: none;
+    border-bottom-color: #E30016;
+}
+.contact-form-cover form input[type="submit"]{
+    align-self: center;
+    border: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #E30016;
+    color: #fff;
+    padding: 10px 20px;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+}
+.contact-form-cover form input[type="submit"]:hover{
+    background-color: #AC0011;
+}
+.form-close{
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    top: -40px;
+    right: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+::-webkit-input-placeholder {font-style: italic;}
+::-moz-placeholder          {font-style: italic;}/* Firefox 19+ */
+:-moz-placeholder           {font-style: italic;}/* Firefox 18- */
+:-ms-input-placeholder      {font-style: italic;}
+
+@media screen and (max-width: 991px){
+    .contact-form-cover form{
+        width: 80%;
+    }
+}

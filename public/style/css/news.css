@@ -1,0 +1,120 @@
+.news{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #F8F8F8;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+.article{
+    width: 97%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 1px solid #EBEBEB;
+}
+.article-image{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+.article-content{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.article-title{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    -webkit-transition: all ease 0.7s;
+    -moz-transition: all ease 0.7s;
+    -ms-transition: all ease 0.7s;
+    -o-transition: all ease 0.7s;
+    transition: all ease 0.7s;
+}
+.article-title:hover{
+    color: #1E86DF;
+}
+.article-date{
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.article-short-text{
+    font-size: 14px;
+}
+.article-view{
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+.article-view .container{
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+}
+.article-view-image{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.article-view-container{
+    padding: 30px;
+}
+.article-view-image img{
+    width: 100%;
+    height: auto;
+}
+.article-view-content{
+    display: flex;
+    flex-direction: column;
+}
+.article-view-title{
+    font-weight: bolder;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.article-view-date{
+    color: #888;
+    font-size: 14px;
+}
+.article-view-text{
+    font-size: 15px;
+}
+.article-video{
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #F8F8F8;
+    border: 1px solid #cdcdcd;
+    align-self: center;
+}
+.article-video iframe{
+    width: 100%;
+    height: 400px;
+}
+
+
+
+
+@media screen and (max-width: 991px){
+    .article-video iframe{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 767px){
+    .article-video{
+        width: 100%;
+    }
+    .article-video iframe{
+        height: 230px;
+    }
+}
+@media screen and (max-width: 574px){
+    .article-video iframe{
+        height: 200px;
+    }
+}

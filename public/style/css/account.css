@@ -1,0 +1,106 @@
+.account-page{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.account-desktop-menu{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #373737;
+}
+.account-desktop-menu ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    border-top: 1px solid #ebebeb;
+}
+.account-desktop-menu ul li{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ebebeb;
+}
+.account-desktop-menu ul li a{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+}
+.account-desktop-menu ul li a:hover, .account-menu-active{
+    color: #1E87E1;
+}
+.user-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+.user-info button{
+    font-size: 14px;
+}
+.user-name{
+    margin-bottom: 5px;
+    text-align: center;
+}
+.user-status{
+    font-size: 13px;
+    font-style: italic;
+    color: #ebebeb;
+    text-align: center;
+}
+.account-content{
+    width: 80%;
+    overflow-y: scroll;
+    background-color: #f8f8f8;
+    height: 100vh;
+    padding: 40px;
+}
+.account-content .container{
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+}
+
+.account-module{
+    padding: 20px;
+}
+.payers-table table{
+    width: 100%;
+    border: 1px solid #ebebeb;
+    background-color: #f8f8f8;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.payers-table table thead tr th{
+    padding: 15px 5px;
+    text-align: center;
+}
+.payers-table table thead tr th span{
+    font-size: 11px;
+    color: #888;
+    display: block;
+}
+.payers-table table tbody tr td, .calc-table table tbody tr th{
+    padding: 10px 5px;
+    text-align: center;
+}
+.test-list{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.test-list th, .test-list td{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}

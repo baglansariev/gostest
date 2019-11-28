@@ -1,0 +1,121 @@
+.simple-slider{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+.slider-viewport{
+    height: 100%;
+    display: flex;
+}
+.slider-image{
+    background-position: center;
+    background-size: cover;
+}
+.slider-control{
+    padding: 0 40px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: 130px;
+    background-color: #E30016;
+    -webkit-transform: skew(-27deg, 0);
+    -moz-transform: skew(-27deg, 0);
+    -ms-transform: skew(-27deg, 0);
+    -o-transform: skew(-27deg, 0);
+    transform: skew(-27deg, 0);
+    right: -50px;
+    bottom: 0;
+    /*box-shadow: 0 0 5px 1px #373737;*/
+}
+.slider-title{
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
+    margin-right: 50px;
+    font-size: 30px;
+    color: #fff;
+    /*text-transform: uppercase;*/
+    -webkit-transform: skew(27deg, 0);
+    -moz-transform: skew(27deg, 0);
+    -ms-transform: skew(27deg, 0);
+    -o-transform: skew(27deg, 0);
+    transform: skew(27deg, 0);
+}
+.slider-text h1:first-of-type{
+
+}
+.slider-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-right: 10px;
+}
+.slider-buttons button{
+    margin-right: 5px;
+    display: block;
+    width: 68px;
+    height: 58px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: #B30012;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    outline: none;
+}
+.slider-buttons button:hover{
+    background-color: #79000C;
+}
+
+
+
+@media screen and (max-width: 1175px){
+    .slider-control{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 850px){
+    .slider-control{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 790px){
+    .slider-control{
+        width: 97%;
+    }
+    .slider-title{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 740px){
+    .slider-control{
+        justify-content: center;
+    }
+    .slider-buttons{
+        display: none;
+    }
+    .simple-slider{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 550px){
+    .slider-control{
+        padding: 0 20px;
+    }
+    .slider-text{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 465px){
+    .slider-title{
+        font-size: 16px;
+    }
+    .simple-slider{
+        height: 350px;
+    }
+}
